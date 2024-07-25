@@ -1,0 +1,49 @@
+label #btn {
+    position: absolute;
+    right: 2%;
+    top: 2%;
+}
+.big-container {
+    display: flex;
+    gap: 5%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.container {
+    width: 25%;
+    max-width: 300px;
+    min-width: 260px;
+    height: 450px;
+    background-color: #dfdfdf;
+    border-radius: 15px;
+    margin-top: 20px;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+.photo {
+    height: 48%;
+}
+.photo img {
+    width: 100%;
+    border-radius: 15px;
+    height: 230px;
+}
+.description {
+    width: 90%;
+    height: 35%;
+}
+.description h1,
+.description p {
+    margin-left: 10px;
+}
+.time {
+    height: 10%;
+    background-color: #d2d2d2;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.time p {
+    margin-left: 10px;
+}

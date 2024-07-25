@@ -1,0 +1,21 @@
+body {
+    background-image: url("../img/terms-background.png");
+}
+#logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 90px;
+}
+#terms {
+    width: 100px;
+    height: 90px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+ol li {
+    margin-bottom: 20px;
+    width: 70%;
+}

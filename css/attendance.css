@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+.container h2 {
+    font-size: 32px;
+    line-height: 42px;
+    color: #263b5e;
+    margin: 14px 0 10px 0;
+    font-weight: 600;
+    letter-spacing: -1px;
+    font-family: "Poppins", sans-serif;
+}
+.myTable {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+    font-family: "Source Sans Pro", sans-serif;
+}
+.myTable tr {
+    border-bottom: 1px solid #ddd;
+}
+.myTable tr.header {
+    background-color: #f1f1f1;
+}
+.myTable td,
+.myTable th {
+    text-align: left;
+    padding: 12px;
+}
+
+.myTable tr:hover {
+    background-color: #f1f1f1;
+}
+.myTable button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #ccc;
+    font-size: 24px;
+}
+#search {
+    width: 20%;
+    margin-bottom: 20px;
+    height: 30px;
+}
+.toggle-button {
+    width: 100px;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+.switch {
+    width: 50px;
+    height: 50px;
+    background-color: #eaeaea;
+    border-radius: 25px;
+    position: absolute;
+    left: 50px;
+    transition: left 0.3s, background-color 0.3s;
+}
+
+.toggle-on .switch {
+    left: 0px;
+}
+
+.toggle-on .switch {
+    background-color: green;
+}
+#submit-button {
+    margin-top: 20px;
+    width: 140px;
+    height: 40px;
+    position: relative;
+    left: 75%;
+    background-color: green;
+    color: white;
+    font-weight: 700;
+}
+.noAttendance {
+    margin: auto auto;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    width: 90%;
+    color: #59188c;
+}
+.noAttendance img {
+    width: 50%;
+    height: 300px;
+}

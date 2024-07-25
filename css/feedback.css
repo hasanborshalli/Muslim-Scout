@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0px 0px 40px 0px;
+    background-image: url("../img/feedback-background.png");
+    background-size: 100%;
+}
+img {
+    margin-bottom: -20px;
+}
+h1 {
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    font-style: normal;
+    margin-left: 20px;
+    margin-bottom: -20px;
+}
+.feedback {
+    width: 480px;
+    height: fit-content;
+    background-color: white;
+    margin-left: 20px;
+    text-align: left;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.5);
+}
+.feedback h3 {
+    color: gray;
+    text-align: center;
+}
+#issue {
+    width: 80%;
+    height: 80px;
+    border-radius: 8px;
+}
+#email {
+    width: 80%;
+    height: 30px;
+    border-radius: 8px;
+}
+label {
+    display: block;
+    font-size: larger;
+}
+li {
+    list-style: none;
+    margin: 10px auto;
+}
+input[type="submit"] {
+    background-color: green;
+    width: 40%;
+    height: 40px;
+    position: relative;
+    left: 20%;
+    margin-top: 10px;
+    color: white;
+    font-size: larger;
+    border-radius: 6px;
+}

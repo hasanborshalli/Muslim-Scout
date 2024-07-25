@@ -1,0 +1,277 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background-image: url("../img/home-background.jpeg");
+    width: 100%;
+    display: flex;
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.5);
+}
+
+.name {
+    margin-top: 0;
+}
+.name li {
+    font-size: 80px;
+    font-weight: 550;
+    color: white;
+    list-style: none;
+    margin-bottom: -15px;
+    font-family: "Kanit", sans-serif;
+}
+
+.join,
+.login {
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    margin-top: -10px;
+    margin-right: 10px;
+    font-size: 30px;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    border-style: none;
+    transition: 0.7s;
+}
+.join:hover,
+.login:hover {
+    background-image: url("../img/button.jpeg");
+    color: black;
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.5);
+}
+.images {
+    width: 40%;
+    float: right;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    animation-name: example;
+    animation-duration: 2s;
+}
+
+#i1 {
+    display: block;
+    margin-bottom: 10px;
+}
+#i3 {
+    position: absolute;
+    bottom: 20%;
+}
+#i1,
+#i2,
+#i3 {
+    width: 60%;
+    height: 200px;
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.5);
+}
+#i1,
+#i2 {
+    margin-right: 10px;
+}
+@keyframes example {
+    0% {
+        left: 100%;
+        top: 10%;
+        opacity: 0;
+    }
+    100% {
+        left: 50%;
+        top: 10%;
+        opacity: 1;
+    }
+}
+@media (max-width: 850px) {
+    .images {
+        left: 50%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .container {
+        height: 900px;
+        background-image: url("../img/home-background\ -2.jpeg");
+        display: block;
+    }
+    .name li {
+        font-size: 60px;
+    }
+    #i1,
+    #i2,
+    #i3 {
+        width: 90%;
+        height: 150px;
+        display: inline;
+    }
+    #i1 {
+        display: inline;
+    }
+    .images {
+        top: 90%;
+        left: 5%;
+    }
+    @keyframes example {
+        0% {
+            left: 90%;
+            top: 90%;
+            opacity: 0;
+        }
+        100% {
+            left: 5%;
+            top: 90%;
+            opacity: 1;
+        }
+    }
+}
+
+.history {
+    display: flex;
+}
+.icon {
+    background-image: url("../img/2.jpeg");
+    background-repeat: no-repeat;
+    padding-right: 50px;
+    width: 10%;
+    height: 200px;
+    margin-top: 70px;
+    margin-left: 3%;
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.5);
+    animation-name: icon;
+    animation-duration: 2s;
+    position: relative;
+}
+@keyframes icon {
+    0% {
+        right: 30%;
+        top: 0%;
+        opacity: 0;
+    }
+    100% {
+        right: 0%;
+        top: 0%;
+        opacity: 1;
+    }
+}
+#icn {
+    margin-top: -30px;
+    margin-left: -20px;
+    height: 120px;
+    opacity: 0.9;
+}
+.text {
+    font-size: 20px;
+    word-spacing: 6px;
+    width: 50%;
+    margin-top: 70px;
+    margin-left: 10%;
+    animation-name: text;
+    animation-duration: 2s;
+    position: relative;
+}
+@keyframes text {
+    0% {
+        left: 60%;
+        top: 0%;
+        opacity: 0;
+    }
+    100% {
+        left: 0%;
+        top: 0%;
+        opacity: 1;
+    }
+}
+@media (max-width: 750px) {
+    .text {
+        font-size: 15px;
+        width: 65%;
+    }
+}
+#caption {
+    position: relative;
+    top: 60%;
+    color: #59188c;
+    width: 100%;
+    font-family: "Marhey", sans-serif;
+}
+.anim1,
+.anim2,
+.anim3 {
+    position: absolute;
+}
+.anim1 {
+    border: 5px solid rgba(244, 34, 104, 0.3);
+    width: 25px;
+    height: 25px;
+    bottom: 20%;
+    left: 30%;
+    animation: animone 15s infinite linear alternate;
+}
+.anim2 {
+    background: rgba(0, 201, 157, 0.6);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 12%;
+    left: 15%;
+    animation: animtwo 13s infinite linear;
+}
+.anim3 {
+    border: 5px solid rgba(0, 153, 229, 0.3);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    top: 15%;
+    left: 45%;
+    animation: animtwo 15s infinite linear;
+}
+
+.anim4 {
+    background: rgba(68, 0, 255, 0.4);
+    width: 3px;
+    height: 20px;
+    top: 18%;
+    right: 25%;
+    animation: animfour 15s infinite linear alternate;
+}
+@keyframes animone {
+    0% {
+        transform: translate(-300px, 151px) rotate(0deg);
+    }
+    100% {
+        transform: translate(251px, -200px) rotate(180deg);
+    }
+}
+@keyframes animtwo {
+    0% {
+        transform: translate(0px, 0px) rotate(0deg) scale(1);
+    }
+    20% {
+        transform: translate(73px, -1px) rotate(36deg) scale(0.9);
+    }
+    40% {
+        transform: translate(141px, 72px) rotate(72deg) scale(1);
+    }
+    60% {
+        transform: translate(83px, 122px) rotate(108deg) scale(1.2);
+    }
+    80% {
+        transform: translate(-40px, 72px) rotate(144deg) scale(1.1);
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(0deg) scale(1);
+    }
+}
+
+@keyframes animfour {
+    0% {
+        transform: translate(100px, 300px) rotate(0deg);
+    }
+    100% {
+        transform: translate(251px, -100px) rotate(180deg);
+    }
+}
+#scout {
+    height: 400px;
+    width: 100%;
+}

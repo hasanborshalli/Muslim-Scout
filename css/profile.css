@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+main {
+    display: flex;
+}
+.left {
+    margin-top: 20px;
+    width: 50%;
+    border-color: #59188c;
+    border-style: solid;
+    margin-left: 20px;
+}
+.first {
+    display: flex;
+    align-items: center;
+    height: 65%;
+    gap: 20px;
+    border-bottom: #59188c solid;
+}
+.pic {
+    width: 50%;
+    height: 100%;
+    border-color: #59188c;
+    border-style: solid;
+    border-right: none;
+}
+.pic img {
+    width: 100%;
+    min-width: 150px;
+    height: 100%;
+    border-right: #59188c solid;
+}
+.name {
+    color: #59188c;
+    font-size: 30px;
+    min-width: 130px;
+}
+@media screen and (max-width: 660px) {
+    .name {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+}
+
+.second {
+    height: 35%;
+}
+.second p {
+    margin-left: 20px;
+    color: #59188c;
+    font-size: larger;
+}
+.right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    color: #59188c;
+    font-weight: 500;
+    border-color: #59188c;
+    border-style: solid;
+}
+.right div,
+.right h3 {
+    margin-left: 20px;
+}
+.change {
+    margin-top: 20px;
+}
+.passbutton {
+    width: 120px;
+    height: 50px;
+    background-color: #59188c;
+    border-radius: 15px;
+    color: white;
+}
+.change-form {
+    background-color: whitesmoke;
+    z-index: 9;
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.5);
+    width: 40%;
+    padding: 20px;
+    position: fixed;
+    top: 40%;
+    left: 25%;
+    display: none;
+}
+.change-form input[type="text"] {
+    width: 70%;
+    height: 25px;
+}

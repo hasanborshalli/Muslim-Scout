@@ -1,0 +1,49 @@
+body {
+    background-image: url("../img/back.png");
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background-color: white;
+    border-radius: 10%;
+    width: 300px;
+    height: 350px;
+    margin: 50px auto;
+    text-align: center;
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.5);
+}
+input[type="text"] {
+    border-radius: 15px;
+    border-style: none;
+    background-color: antiquewhite;
+    height: 50px;
+    width: 200px;
+}
+li {
+    list-style: none;
+    margin-bottom: 40px;
+    margin-left: -40px;
+}
+input[type="submit"] {
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px #59188c;
+    background-color: #b06ce6;
+}
+#logo {
+    width: 100px;
+    height: 90px;
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+}
+#big-logo {
+    width: 30%;
+    height: 120px;
+}
+@media (max-width: 700px) {
+    #big-logo {
+        width: 40%;
+    }
+}

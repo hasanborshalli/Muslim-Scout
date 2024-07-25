@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: darkslateblue;
+}
+.main {
+    display: flex;
+    justify-content: space-around;
+}
+h4 {
+    font-weight: 700;
+    font-size: 25px;
+    margin: 10px 50px 20px 10px;
+    color: grey;
+}
+.container {
+    width: 25%;
+    max-width: 150px;
+    min-width: 50px;
+    height: 480px;
+    background-color: rgb(8, 4, 81);
+    margin-left: 10px;
+    text-align: center;
+    padding: 20px;
+}
+.left-buttons {
+    border-style: none;
+    background-color: transparent;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    width: 100%;
+    height: 40px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.left-buttons:hover {
+    border-radius: 15px;
+    background-color: #b300ea;
+}
+.addnews {
+    background-color: rgb(8, 4, 81);
+    width: 70%;
+    float: right;
+}
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: #b300ea;
+    color: white;
+    text-align: left;
+    position: relative;
+    bottom: 5%;
+    left: 2%;
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+.header p {
+    margin-left: 20px;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+@media (max-width: 700px) {
+    .container {
+        width: 15%;
+    }
+    .left-buttons {
+        font-size: 10px;
+        width: 150%;
+        margin-left: -10px;
+    }
+}
+.addnewform {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.addnewform input {
+    width: 40%;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    color: white;
+    height: 20px;
+    margin-left: 20px;
+}
+#description,
+#descriptionEdit {
+    width: 90%;
+}
+#submit-button {
+    background-color: #b300ea;
+    height: 30px;
+    border-radius: 8px;
+    border-bottom: 0px;
+    position: relative;
+    left: 28%;
+}
+#addbookform,
+#editnewform,
+#editbookform {
+    display: none;
+}
+#deletebookform ol,
+#deletenewform ol {
+    color: white;
+    font-size: 20px;
+    width: 100%;
+}
+#deletebookform li,
+#deletenewform li {
+    margin-bottom: 20px;
+    border-bottom: 1px solid white;
+    width: 50%;
+}
+.mainLi {
+    display: flex;
+    justify-content: space-between;
+}
+#deletebookform,
+#deletenewform,
+#editnewform,
+#editbookform {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-height: 400px;
+    display: none;
+}
+#deletebookform span,
+#deletenewform span {
+    cursor: pointer;
+}
+.confirm {
+    width: 400px;
+    height: 100px;
+    background-color: white;
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    z-index: 2;
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-weight: 600;
+    display: none;
+}
+.buttons {
+    display: flex;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    gap: 30px;
+}
+.buttons button {
+    width: 70px;
+}
+#search {
+    width: 50%;
+}
+.applist {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.applist li {
+    color: white;
+    margin-bottom: 10px;
+    cursor: pointer;
+    width: fit-content;
+    font-size: 20px;
+}
+.applist span {
+    display: none;
+}
+#startEditNew,
+#startEditBook {
+    display: none;
+}
+#photo {
+    width: 36%;
+    height: 172px;
+    display: none;
+    margin: 20px;
+}

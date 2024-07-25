@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.head-container {
+    position: relative;
+    left: 5%;
+    margin-top: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    background-color: #59188c;
+    z-index: -1;
+}
+#head {
+    font-size: 50px;
+    text-align: center;
+    color: blueviolet;
+    background-color: white;
+    width: 90%;
+}
+.table {
+    text-align: center;
+    height: 400px;
+}
+.activity-table {
+    width: 100%;
+    padding-top: 20px;
+    color: white;
+}
+.activity-table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    border-style: none;
+    max-width: 300px;
+}
+.activity-table tr:nth-child(odd) {
+    background-color: rgb(175, 123, 224);
+}
+.activity-table tr:nth-child(even) {
+    background-color: rgb(178, 175, 175);
+}
+.activity-table tr:first-child {
+    background-color: #59188c;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.new-activity,
+.edit-activity {
+    background-color: whitesmoke;
+    z-index: 9;
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    padding-bottom: 20px;
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    text-align: center;
+    display: none;
+    animation-name: showing;
+    animation-duration: 1s;
+}
+
+@keyframes showing {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.new-activity input,
+.new-activity select,
+.edit-activity input,
+.edit-activity select {
+    width: 90%;
+    margin-top: 20px;
+}
+#submit-button {
+    width: 20%;
+    background-color: green;
+    color: white;
+    padding: 10px;
+}
+.request-activity,
+.requested-activities,
+.add-activity {
+    background-color: yellow;
+    border-radius: 20px;
+    width: 160px;
+    height: 50px;
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 700;
+    color: #59188c;
+    display: none;
+}
+.requested-activities {
+    bottom: 15%;
+}
+
+.request-activity:hover,
+.add-activity:hover,
+.requested-activities:hover {
+    background-color: #59188c;
+    color: yellow;
+}
+.request-activityBlock,
+.requested-activitiesBlock {
+    background-color: whitesmoke;
+    z-index: 9;
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.5);
+    width: 50%;
+    padding-bottom: 20px;
+    position: fixed;
+    top: 20%;
+    left: 25%;
+    text-align: center;
+    animation-name: showing;
+    animation-duration: 1s;
+    display: none;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-height: 400px;
+}
+.requested-activitiesBlock {
+    min-height: 300px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.request-activityBlock input {
+    width: 90%;
+    margin-top: 20px;
+}
+.requested-activitiesBlock table {
+    border-collapse: collapse;
+}
+.requested-activitiesBlock table td {
+    padding: 10px;
+    border: 1px solid black;
+}
+#deleteLink {
+    text-decoration: none;
+}
+#acceptButton {
+    margin-right: 10px;
+}
+.hidden {
+    width: 30px;
+    cursor: pointer;
+}
+#first-hidden {
+    cursor: auto;
+}
+.confirm {
+    width: 400px;
+    height: 100px;
+    background-color: white;
+    position: fixed;
+    top: 40%;
+    left: 35%;
+    z-index: 10;
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-weight: 600;
+    display: none;
+}
+.buttons {
+    display: flex;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    gap: 30px;
+}
+.buttons button {
+    width: 70px;
+}
+.registeredUsers {
+    width: 40%;
+    margin: auto;
+    background-color: white;
+    border-radius: 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 30%;
+    left: 30%;
+    animation-name: showing;
+    animation-duration: 1s;
+    overflow: auto;
+    max-height: 400px;
+    display: none;
+}
+.registeredUsers p,
+.registeredUsers ol {
+    font-weight: 800;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    overflow-wrap: break-word;
+}
+.registeredUsers h1 {
+    color: #59188c;
+    text-decoration: underline;
+    text-align: center;
+    overflow-wrap: break-word;
+}

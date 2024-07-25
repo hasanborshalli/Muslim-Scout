@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/background.jpeg);
+}
+.head {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.head h1 {
+    color: white;
+    width: 250px;
+}
+.info {
+    background-color: white;
+    border-radius: 10%;
+    width: 400px;
+    height: 570px;
+    margin-left: 8%;
+}
+.info h1 {
+    font-family: "Montserrat";
+    color: #59188c;
+    font-weight: 700;
+    text-align: center;
+}
+.name {
+    display: flex;
+}
+ul {
+    list-style-type: none;
+}
+input {
+    border-radius: 8px;
+    background-color: rgb(228, 228, 228);
+    border-style: none;
+    height: 30px;
+    width: 80%;
+}
+.input2 {
+    width: 90%;
+}
+
+#gender {
+    margin-left: 10%;
+}
+input[type="radio"] {
+    width: 20px;
+    height: 15px;
+}
+.submit-button {
+    width: 85%;
+    background-color: #59188c;
+    color: white;
+    font-size: 18px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    margin-left: 10%;
+}
+#terms {
+    width: 20px;
+    height: 20px;
+    margin-left: 10%;
+    margin-top: 20px;
+}

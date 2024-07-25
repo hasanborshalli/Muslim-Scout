@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: darkslateblue;
+}
+.main {
+    display: flex;
+    justify-content: space-around;
+}
+h4 {
+    font-weight: 700;
+    font-size: 25px;
+    margin: 10px 50px 20px 10px;
+    color: grey;
+}
+.container {
+    width: 25%;
+    max-width: 150px;
+    height: 480px;
+    background-color: rgb(8, 4, 81);
+    margin-left: 10px;
+    text-align: center;
+    padding: 20px;
+}
+.left-buttons {
+    border-style: none;
+    background-color: transparent;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    width: 100%;
+    height: 40px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.left-buttons:hover {
+    border-radius: 15px;
+    background-color: #b300ea;
+}
+.adduser {
+    background-color: rgb(8, 4, 81);
+    width: 70%;
+    float: right;
+}
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: #b300ea;
+    color: white;
+    text-align: left;
+    position: relative;
+    bottom: 5%;
+    left: 2%;
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+.header p {
+    margin-left: 20px;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+@media (max-width: 700px) {
+    .container {
+        width: 15%;
+    }
+    input[type="button"] {
+        font-size: 12px;
+        width: 120%;
+    }
+}
+.info li {
+    list-style-type: none;
+}
+input,
+select {
+    width: 40%;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    color: white;
+    height: 20px;
+    margin-bottom: 27px;
+    margin-right: 20px;
+}
+.gender-radio {
+    width: 15px;
+    margin-right: 10px;
+}
+.gender-label {
+    color: white;
+    margin-right: 10px;
+}
+select:focus {
+    background-color: grey;
+}
+#submit-button {
+    background-color: #b300ea;
+    height: 30px;
+    width: 100px;
+    border-radius: 8px;
+    border-bottom: 0px;
+    position: relative;
+    left: 80%;
+    margin: 0 0 0 0;
+}
+.adduserform,
+.edituserform {
+    display: none;
+}
+.applist {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.edituserform {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-height: 400px;
+}
+.edituserform select {
+    margin-left: 3%;
+    width: 15%;
+    min-width: 76px;
+}
+.applist li {
+    color: white;
+    margin-bottom: 10px;
+    cursor: pointer;
+    width: fit-content;
+    font-size: 20px;
+}
+.applist span {
+    display: none;
+}
+#photo2,
+#photo2Edit {
+    width: 100px;
+    height: 100px;
+    display: none;
+    margin-bottom: 20px;
+}
+#address {
+    display: none;
+}
+#deleteuserform ol {
+    color: white;
+    font-size: 20px;
+    width: 100%;
+}
+#deleteuserform li {
+    margin-bottom: 20px;
+    border-bottom: 1px solid white;
+    width: 50%;
+}
+.mainLi {
+    display: flex;
+    justify-content: space-between;
+}
+#deleteuserform {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-height: 400px;
+    display: none;
+}
+#deleteuserform span {
+    cursor: pointer;
+}
+.confirm {
+    width: 400px;
+    height: 100px;
+    background-color: white;
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    z-index: 2;
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-weight: 600;
+    display: none;
+}
+.buttons {
+    display: flex;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    gap: 30px;
+}
+.buttons button {
+    width: 70px;
+}
+.applist span {
+    display: none;
+}
+#search {
+    width: 20%;
+}
+#starteditform {
+    display: none;
+}
+#imgpoints {
+    display: flex;
+    gap: 30px;
+    color: white;
+}

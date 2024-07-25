@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.main-container {
+    display: flex;
+}
+.feedbackListBlock {
+    width: 30%;
+    min-width: 240px;
+    height: 500px;
+    background-color: #b8b8b8;
+    margin: 20px;
+}
+.feedbackListBlock h1 {
+    color: #59188c;
+    text-align: center;
+}
+.feedbackList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #59188c;
+}
+.feedbackList li {
+    cursor: pointer;
+    width: fit-content;
+    font-size: 20px;
+}
+.feedbackList span {
+    display: none;
+}
+.show-feedback {
+    width: 60%;
+    height: 500px;
+    background-color: #b8b8b8;
+    margin: 20px;
+}
+.show-feedback h1 {
+    color: #59188c;
+    text-align: center;
+}
+.show-feedback ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#email {
+    width: 40%;
+    min-width: 200px;
+    height: 30px;
+    border-radius: 8px;
+    border: #59188c;
+}
+#issue,
+#reply {
+    width: 40%;
+    min-width: 200px;
+}
+#reply-button {
+    position: absolute;
+    right: 7%;
+    margin-top: 10px;
+    background-color: #59188c;
+    color: white;
+    height: 50px;
+    width: 130px;
+    border-radius: 12px;
+    font-size: 15px;
+    border-bottom: 0px;
+}

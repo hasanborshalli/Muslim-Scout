@@ -1,0 +1,31 @@
+.container{
+    width:25%;
+    height:450px;
+    background-color: #dfdfdf;
+    border-radius: 15px;
+}
+.photo{
+height:48%;
+}
+.photo img{
+    width:100%;
+    border-radius: 15px;
+}
+.description{
+    width:90%;
+    height:35%;
+}
+.description h1,.description p{
+margin-left:10px;
+}
+.time{
+    height:10%;
+    background-color: #d2d2d2;
+    border-radius: 8px;
+    display:flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.time p{
+   margin-left: 10px;
+}
